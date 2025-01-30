@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit form</title>
+    <link rel="stylesheet" href="css.css">
+    <form action ="submit.html" >
+</head>
+
+<style>
+    fieldset {
+        margin: auto;
+        width: 65%;
+       background-color: rgb(255, 248, 248);
+
+    }
+
+
+    .adress {
+        box-sizing: border-box;
+        padding: 12px;
+        box-sizing: border-box;
+        display:inline-block;
+       margin-bottom: 10px;
+        
+}
+    
+    input::placeholder {
+    text-align: left;
+    font-size: small;
+}
+
+
+    .businessowner {
+        background-color:  rgb(255, 233, 236);
+        
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        height: 50%, min-content 13px;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .company {
+        background-color: rgb(255, 233, 236);
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .contact {
+        background-color: rgb(255, 233, 236);
+        padding: 12px;
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        margin-bottom: 20px;
+
+    }
+
+    .email {
+        background-color:  rgb(255, 233, 236);
+        padding: 12px;
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        margin-bottom: 20px;
+
+    }
+
+    .wrap {
+        background-color:  rgb(255, 233, 236);
+        padding: 12px;
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        margin-bottom: 20px;
+    }
+
+    span {
+        float: right;
+    }
+
+    .business {
+        background-color:  rgb(255, 233, 236);
+        padding: 12px;
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        margin-bottom: 20px;
+    }
+
+    .feedback {
+        background-color:  rgb(255, 233, 236);
+        padding: 12px;
+        border-radius: 1px;
+        border: 0.1px, solid;
+        box-sizing: border-box;
+        margin: 7px, auto;
+        margin-bottom: 20px;
+    }
+
+    .submitt {
+        position: absolute;
+        left: 45%;
+        
+       
+    }
+    #sub{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(197, 243, 243);
+    }
+h4{display:inline;}
+
+#fname:hover,#lname:hover,#cname:hover,#phone:hover,
+#emaail:hover,#Address:hover,#txt:hover
+{
+    border: 1px solid rgb(130, 54, 73); /* Increase border width */
+    box-shadow: 0 1px 2px rgba(70, 29, 29, 0.726); /* Add shadow effect */
+}
+</style>
+
+
+<fieldset>
+
+    <body>
+        <div class="container">
+            <h1>Register your Business</h1>
+            <h3 style="font-weight: lighter;font-size: medium;"> Please provide all required details to register your
+                business with us</h3>
+            <hr>
+            <strong><em>
+                    <h4>All the fields marked with <b>*</b> are necessary</h4>
+                </em></strong><br>
+
+            <div class="businessowner">
+                <H3>Business Owner</H3>
+                <label for="First name">
+
+                    <h4>First Name :</h4><input type="text" name="Name" id="fname" placeholder="eg- Kushagra" required>
+
+                    <h4>Last Name :</h4><input type="text" name="Name" id="lname" placeholder="eg- Gupta" required>
+
+                </label>
+            </div>
+
+            <div class="company">
+                <label for="Company name">
+                    <h4>Company Name - </h4><input type="text" name="Name" id="cname" placeholder="eg-Hamster" required>
+                </label>
+            </div>
+
+            <div class="contact">
+                <h4>Contact no - </h4><input type="number" name="Name" id="phone" placeholder="ex-00-000-00-000"
+                    required>
+            </div>
+
+            <div class="email">
+                <label for="Email id">
+                    <h4>Email id - </h4><input type="email" id="emaail" placeholder="ex-kushuvikas@gmail.com"
+                        required>
+                </label>
+            </div>
+        </div>
+
+        <div class="wrap"><label for="Adress">
+                <h3>Address : </h3>
+                <div class="adress">
+                    <h4>Street - </h4><input type="text" name="text" id="Address" required placeholder="xyz">
+                    <br><br>
+
+                    <h4>Landmark - </h4><input type="text" name="text" id="Address" required placeholder="zyx">
+                    <br><br>
+
+                    <h4>Country - </h4>
+                    <select name="country" id="country">          
+                        <option value="select">Select any country</option>
+                        <option value="select">India</option>
+                        <option value="select">Others</option>
+                    </select>
+                    <br><br>
+                    <label for="state">
+                        <h4>State - </h4>
+                    </label>
+                    <select name="state" id="statee">
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and
+                            Diu
+                        </option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div> 
+        </div>
+        <div class="business">
+            <h4> Type of business </h4>
+            <select name="business" id="Businness">
+                <option value="selected">Select type.... </option>
+                <option value="selected">Rentals</option>
+                <option value="selected">Shop</option>
+                <option value="selected">Store/cafe</option>
+                <option value="selected">Lending</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="feedback">
+            <h4>Message/Feedback</h4>
+            <textarea id="txt" name="feedback" rows="3" cols="30" placeholder="Enter your feedback here..."></textarea>
+        </div>
+        <div class="submitt">
+            <input type="submit" value="Submit" id="sub">
+            <br><br>
+        </div><br><br>
+    </body>
+</fieldset>
+
+</html></form>
